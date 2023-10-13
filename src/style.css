@@ -1,3 +1,48 @@
-h1 {
-    color:blue;
+#header{
+    display:flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+body{
+    color:white;
+    background-position:top center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: -2;
+}
+
+body::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    z-index: -1;
+}
+
+.list-group, #todo-form{
+    width: 50%;
+    margin: auto;
+}
+
+.form-control{
+    color:white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.list-group-item{
+    color:white;
+    background-color: rgba(255, 255, 255, 0.3);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }

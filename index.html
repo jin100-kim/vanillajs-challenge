@@ -4,13 +4,42 @@
     <head>
         <title>Vanilla Challenge</title>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="src/style.css" />
     </head>
     
     <body>
-        <h1>Hello World!</h1>
-        <button id="colorBtn">Give me color</button>
+        <div id="header">
+            <div id="weather">
+                <span class="js-clock display-6">yyyy-mm-dd hh:mm:ss</span>
+                <br>
+                <span class="js-weather h4">&nbsp;</span>
+                <span class="js-name h4">&nbsp;</span>
+            </div>
+            
+            
+            <form id="login-form" class="hidden">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="id" aria-label="id" aria-describedby="button-addon2" required>
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">login</button>
+                </div>
+            </form>
+            
+            <span id="login-text" class="h2 hidden"></span>
+        </div>
+
+        <form id="todo-form">
+            <input type="text" class="form-control" placeholder="write a To Do and Press Enter" maxlength="50" required/>
+        </form>
+
+        <ul id="todo-list" class="list-group"></ul>
+
         <script src="src/index.js"></script>
+        <script src="src/todo.js"></script>
+        <script src="src/login.js"></script>
+        <script src="src/timer.js"></script>
+        <script src="src/weather.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
 </html>
-    
